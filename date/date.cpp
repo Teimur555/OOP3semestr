@@ -3,22 +3,22 @@
 
 
 using namespace std;
-// конструктор
+// constructor
 Date::Date() {
     year = 1;
     month = 1;
     day = 1;
 }
-//ќперации
-void Date::setYear(int yy) { // задаю год
+//operation
+void Date::setYear(int yy) { // set year
     if (1 <= yy)
         year = yy;
 }
-void Date::setMonth(int mm) { // задаю мес€ц
+void Date::setMonth(int mm) { // set month
     if (mm <= 12 && mm >= 1)
         month = mm;
 }
-void Date::setDay(int dd) { // задаю день
+void Date::setDay(int dd) { // set day
     
     if (dd <= 31 && dd >= 1)
         if (month != 2 && month != 4 && month != 6 && month != 9 && month != 11)
@@ -37,7 +37,7 @@ void Date::setDay(int dd) { // задаю день
             }
         }
 }
-void Date::AddDay(int add) { // добавл€ю день
+void Date::AddDay(int add) { // add day
     if (0 < add)
     {
         month = month + add / 30;
@@ -52,17 +52,17 @@ void Date::AddDay(int add) { // добавл€ю день
         }
     }
 }
-int Date::getYear() { // „итаю значение года
+int Date::getYear() { 
     return year;
 }
-int Date::getMonth() { // „итаю значение мес€ц
+int Date::getMonth() { 
     return month;
 }
-int Date::getDay() { // „итаю значение день
+int Date::getDay() { 
     return day;
 }
 
-string Date::Date_to_string() { // „итаю дату целиком
+string Date::Date_to_string() { 
     return to_string(day) + "/" + to_string(month) + "/" + to_string(year);
 }
 

@@ -6,23 +6,23 @@
 using namespace std;
 class Date {
 private:
-    // пол€ класса
-    int year; //год
-    int month; //мес€ц
-    int day; //день
+    // polya classa
+    int year; 
+    int month; 
+    int day; 
 
 public:
-    // конструктор
+    // constructor
     Date();
-    //ќперации
-    void setYear(int yy); // задаю значение года
-    void setMonth(int mm); // задаю значение мес€ц
-    void setDay(int dd); // задаю значение день
-    void AddDay(int add); // добавл€ю день
-    int getYear(); // „итаю значение года
-    int getMonth(); // „итаю значение мес€ца
-    int getDay(); // „итаю значение дн€
-    string Date_to_string(); // вывод значени€ дн€
+    //operations
+    void setYear(int yy); 
+    void setMonth(int mm); 
+    void setDay(int dd); 
+    void AddDay(int add);
+    int getYear(); 
+    int getMonth(); 
+    int getDay();
+    string Date_to_string();
 };
 #endif // DATE_H
 

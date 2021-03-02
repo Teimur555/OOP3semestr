@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    Date dmy; // переменная дата
+    Date dmy; 
     int dd, mm, yy, n;
 
     cout << "Year?" << endl;
